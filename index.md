@@ -8,7 +8,6 @@ Simples e de facil entendimento.
 
 A proposta deste projeto é mostrar os container e algumas informações sobre o mesmo
 
-```funcionalidade
 Simples e funcional
 
 - Listar Repositorios
