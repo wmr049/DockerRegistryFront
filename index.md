@@ -11,6 +11,6 @@ A proposta deste projeto é mostrar os container e algumas informações sobre o
 ```funcionalidade
 Simples e funcional
 
-# Listar Repositorios
-# Apresentar Detalhes
-# Comandos para pull e push de imagens
+- Listar Repositorios
+- Apresentar Detalhes
+- Comandos para pull e push de imagens
