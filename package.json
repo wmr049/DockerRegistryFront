@@ -1,15 +1,15 @@
 {
-  "name": "ng2-admin",
+  "name": "dockerregistryfront",
   "version": "1.0.0",
-  "description": "Angular and Bootstrap 4 Admin Template.",
-  "author": "Akveo <contact@akveo.com>",
-  "homepage": "http://akveo.github.io/ng2-admin/",
+  "description": "Gerenciador do Docker Registry.",
+  "author": "Milton Reis <wmr049@gmail.com>",
+  "homepage": "https://wmr049.github.io/DockerRegistryFront/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/akveo/ng2-admin.git"
+    "url": "https://github.com/wmr049/DockerRegistryFront.git"
   },
   "bugs": {
-    "url": "https://github.com/akveo/ng2-admin/issues"
+    "url": "https://github.com/wmr049/DockerRegistryFront/issues"
   },
   "license": "MIT",
   "scripts": {
