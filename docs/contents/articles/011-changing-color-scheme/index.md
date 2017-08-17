@@ -33,7 +33,7 @@ with
 @import 'colorSchemes/dark';
 ```
 <br><br>
-
+ 
 3) Change the color scheme enabled:
 
 Open `src/app/theme/theme.config.ts`.
