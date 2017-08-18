@@ -16,10 +16,10 @@ export const PAGES_MENU = [
         },
       },
       {
-        path: 'dashboard',
+        path: 'repositories',
         data: {
           menu: {
-            title: 'general.menu.dashboard',
+            title: 'general.menu.repositories',
             icon: 'ion-ios-pie-outline',
             selected: false,
             expanded: false,

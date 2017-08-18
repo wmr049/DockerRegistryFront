@@ -20,6 +20,7 @@
       "menu": {
         "dashboard": "Painel de Controle",
         "main": "Principal",
+        "repositories": "Repositórios",
         "editors": "Editores",
         "ck_editor": "CKEditor",
         "components": "Componentes",
@@ -53,6 +54,9 @@
         "external_link": "Linq Externo"
       },
       "created_with": "Criado Com"
+    },
+    "repositories":{
+      "default": "Repositórios"
     },
     "dashboard": {
       "acquisition_channels": "Canais de Aquisição",
