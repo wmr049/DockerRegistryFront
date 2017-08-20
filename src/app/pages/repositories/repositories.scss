@@ -2,3 +2,36 @@
 .repository-list-search {
     margin-bottom: 1em;
   }
+
+.pager {
+  padding-left: 0;
+  margin: 20px 0;
+  text-align: center;
+  list-style: none;
+}
+
+.pager li{
+  display: inline;
+}
+
+.pager li > a, .pager li > span {
+  display: inline-block;
+  padding: 5px 14px;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+
+}
+
+.pager .previous > a, .pager
+.previous > span{
+  float: left;
+}
+
+.pager .next > a, .pager
+.next > span{
+  float: right;
+}
+
+nav{
+  box-sizing: border-box;
+}

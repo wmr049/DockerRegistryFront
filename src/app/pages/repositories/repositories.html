@@ -1,6 +1,44 @@
 <div class="input-group repository-list-search">
-    <span class="input-group-addon"><span class="glyphicon glyphicon-search"></span></span>
+    <span class="input-group-addon"><span class="ion-android-search"></span></span>
     <input type="search" placeholder="Filtrar repositórios nesta pagina"  class="form-control">
-    <span class="input-group-addon">Repositórios <span ></span></span>
-    
+    <span class="input-group-addon">Repositórios <span ng-bind-template="( / )"></span></span>
+
 </div>
+
+<nav>
+  <ul class="pager">
+
+    <li class="previous">
+      <a href="">
+        <span aria-hidden="true">&larr;</span>
+        Primeira pagina
+      </a>
+    </li>
+
+    <li>
+      <div class="btn-group" role="group">
+        <a href="#" class="btn btn-default dropdown-toglle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+          <span class="ion-ios-book-outline" aria-hidden="true"></span> / pagina:
+          <span ng-show="repositorioPorPagina">{{repositorioPorPagina}}</span>
+          <span ng-show="!repositorioPorPagina">todos</span>
+          <span class="carret"></span>
+        </a>
+        <ul class="dropdown-menu">
+          <li><a href="repositorios">mostrar todos</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="repositorios/10">10</a></li>
+          <li><a href="repositorios/10">20</a></li>
+          <li><a href="repositorios/10">40</a></li>
+          <li><a href="repositorios/10">80</a></li>
+        </ul>
+      </div>
+    </li>
+
+    <li class="next" >
+      <a href="">
+        Próximo <span aria-hidden="true">&rarr;</span>
+      </a>
+    </li>
+
+  </ul>
+</nav>
