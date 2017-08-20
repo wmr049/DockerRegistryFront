@@ -3,41 +3,12 @@
   "version": "1.0.0",
   "description": "Gerenciador do Docker Registry.",
   "author": "Milton Reis <wmr049@gmail.com>",
-  "homepage": "https://wmr049.github.io/DockerRegistryFront/",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/wmr049/DockerRegistryFront.git"
-  },
-  "bugs": {
-    "url": "https://github.com/wmr049/DockerRegistryFront/issues"
-  },
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "rimraf": "rimraf",
-    "changelog": "standard-changelog",
     "start": "ng serve",
-    "start:hmr": "ng serve --hmr",
-    "start:aot": "ng serve --aot",
-    "start:prod": "ng serve --prod",
-    "start:prod:aot": "ng serve --prod --aot",
-    "build": "npm run clean:dist && ng build",
-    "build:prod": "npm run build -- --prod",
-    "build:prod:aot": "npm run build:prod -- --aot",
-    "build:ci": "npm run build:prod && npm run build:prod:aot",
-    "build:demo": "npm run build:prod:aot -- --base-href \"http://akveo.com/ng2-admin/\"",
-    "test": "ng test -sr",
-    "test:coverage": "npm run clean:coverage && ng test -sr -cc",
-    "lint": "ng lint",
-    "lint:styles": "stylelint ./src/app/**/*.scss",
-    "lint:ci": "npm run lint && npm run lint:styles",
-    "pree2e": "webdriver-manager update --standalone false --gecko false",
-    "e2e": "ng e2e",
-    "clean": "npm cache clean && npm run rimraf -- node_modules doc typings coverage dist",
-    "clean:dist": "npm run rimraf -- dist",
-    "clean:coverage": "npm run rimraf -- coverage",
-    "docs:deploy": "wintersmith build -C docs && gh-pages -d docs/build",
-    "docs:serve": "wintersmith preview -C docs"
+    "build": "ng build",
+    "lint": "ng lint"
   },
   "private": true,
   "dependencies": {
