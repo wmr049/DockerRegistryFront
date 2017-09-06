@@ -80,11 +80,20 @@ ul.no-bullet {
   flex-flow: row;
 }
 
+.RepositoryListItem__action i {
+  position: relative;
+  top: .5rem;
+  left: 1.2rem;
+}
+
 .RepositoryListItem__action{
   background-color: #c4cdda;
   color: #7a8491;
   -ms-flex-flow: column;
-  flex-flow: column;
+  flex-flow: column;  
+}
+
+.RepositoryListItem__repositoryListItem .RepositoryListItem__action{
   
 }
 
@@ -125,7 +134,7 @@ a img {
 }
 
 .RepositoryListItem__repoName{
-  color: #22b8eb;
+  color: #209e91;
 }
 
 .RepositoryListItem__public{
@@ -173,4 +182,14 @@ a img {
   margin-top: 1.2rem;
   margin-left: .4rem;
   font-size: .7rem;
+}
+
+a {
+  color: #209e91;
+  line-height: inherit;
+  text-decoration: none;
+}
+
+a {
+  background-color: transparent;
 }

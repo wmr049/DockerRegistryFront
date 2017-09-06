@@ -15,10 +15,13 @@ export const routes: Routes = [
     loadChildren: 'app/pages/register/register.module#RegisterModule',
   },
   {
+    path: 'front-end',
+    loadChildren: 'app/pages/front-end/front-end.module#FrontEndModule',
+  },
+  {
     path: 'pages',
     component: Pages,
-    children: [
-      { path: '', redirectTo: 'main', pathMatch: 'full' },
+    children: [      
       { path: 'dashboard', loadChildren: './dashboard/dashboard.module#DashboardModule' },
       { path: 'main', loadChildren: './main/main.module#MainModule' },
       { path: 'repositories', loadChildren: './repositories/repositories.module#RepositoriesModule' },
