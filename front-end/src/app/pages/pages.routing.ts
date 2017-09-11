@@ -18,7 +18,7 @@ export const routes: Routes = [
     path: 'pages',
     component: Pages,
     children: [
-      { path: '', redirectTo: 'main', pathMatch: 'full' },
+      { path: '', redirectTo: 'login', pathMatch: 'full' },
       { path: 'dashboard', loadChildren: './dashboard/dashboard.module#DashboardModule' },
       { path: 'main', loadChildren: './main/main.module#MainModule' },
       { path: 'repositories', loadChildren: './repositories/repositories.module#RepositoriesModule' },
