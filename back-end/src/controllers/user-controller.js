@@ -63,11 +63,13 @@ exports.authenticate = async(req, res, next) => {
             roles: user.roles
         });
 
-        res.status(201).send({
-            token: token,
+        res.status(201).send({            
             data: {
-                email: user.email,
-                name: user.name
+                user:{
+                    email: user.email,
+                    name: user.name
+                },                
+                token: token
             }
         });
     } catch (e) {
@@ -98,11 +100,13 @@ exports.refreshToken = async(req, res, next) => {
             roles: user.roles
         });
 
-        res.status(201).send({
-            token: token,
+        res.status(201).send({            
             data: {
-                email: user.email,
-                name: user.name
+                user:{
+                    email: user.email,
+                    name: user.name
+                },                
+                token: token
             }
         });
     } catch (e) {
