@@ -1,4 +1,10 @@
 {
+
+    "register":{
+      "title": "Registre no Gerenciador Docker",
+      "email": "Email",
+      "password": "Senha"
+    },
     "login": {
       "title": "Entre no Gerenciado de Docker",
       "signup_link": "Novo no Gerenciador de Docker? Inscreva-se!",
