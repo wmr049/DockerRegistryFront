@@ -14,6 +14,7 @@ export abstract class ServiceBase {
   public Token: string = '';
 
   protected UrlServiceV1: string = 'http://localhost:3000/';
+  protected urlServiceDockerV2: string = 'http://localhost:5000/v2/'; 
 
   public obterUsuario() {
     return JSON.parse(localStorage.getItem('eio.user'));
