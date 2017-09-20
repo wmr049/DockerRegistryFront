@@ -9,15 +9,15 @@ import { Usuario } from 'app/pages/usuario/models/usuario';
 @Injectable()
 export class UsuarioService extends ServiceBase {
 
-  
+
   constructor(private http: Http) { super(); }
 
   registrarUsuario(usuario: Usuario): Observable<Usuario> {
     const headers = new Headers({ 'Content-Type': 'application/json' });
-    const options = new RequestOptions({ headers: headers });
+    const options = new RequestOptions({ headers });
 
     const response = this.http
-      .post(this.UrlServiceV1 + 'users', usuario, options)
+      .post(this.urlServiceV1 + 'users', usuario, options)
       .map(super.extractData)
       .catch(super.serviceError);
 
@@ -29,7 +29,7 @@ export class UsuarioService extends ServiceBase {
     const options = new RequestOptions({ headers });
 
     const response = this.http
-      .post(this.UrlServiceV1 + 'users/authenticate ', usuario, options)
+      .post(this.urlServiceV1 + 'users/authenticate ', usuario, options)
       .map(super.extractData)
       .catch((super.serviceError));
     return response;

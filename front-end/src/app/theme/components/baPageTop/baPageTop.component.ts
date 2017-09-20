@@ -45,7 +45,7 @@ export class BaPageTop implements OnInit {
     this.user = JSON.parse(localStorage.getItem('eio.user'));
 
     if (this.user) {
-      this.nome = this.user.nome;
+      this.nome = this.user.name;
     }
     return this.token !== null;
   }

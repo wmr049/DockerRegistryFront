@@ -69,7 +69,9 @@ export class Register implements OnInit, AfterViewInit {
   ngOnInit() {
 
     const password = new FormControl('', [Validators.required, Validators.minLength(6)]);
-    const confirmPassword = new FormControl('', [Validators.required, Validators.minLength(6), CustomValidators.equalTo(password)]);
+    const confirmPassword = new FormControl('', [Validators.required,
+      Validators.minLength(6),
+      CustomValidators.equalTo(password)]);
 
     this.inscricaoForm = this.fb.group({
       name: ['', [Validators.required, Validators.minLength(2), Validators.maxLength(150)]],
@@ -118,7 +120,7 @@ export class Register implements OnInit, AfterViewInit {
       .then((toast: Toast) => {
         setTimeout(() => {
           this.toastr.dismissToast(toast);
-          this.router.navigate(['/']);
+          this.router.navigate(['/pages/main']);
         }, 3500);
       });
   }
