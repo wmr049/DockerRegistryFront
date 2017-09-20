@@ -8,25 +8,24 @@ import { Observable } from 'rxjs/Observable';
 
 import { ToastsManager, Toast } from 'ng2-toastr/ng2-toastr';
 import { CustomValidators, CustomFormsModule } from 'ng2-validation';
-import { GenericValidator } from "app/utils/forms.generic.validator";
-import { Usuario } from "app/pages/usuario/models/usuario";
-import { UsuarioService } from "app/services/usuario.service";
+import { GenericValidator } from 'app/utils/forms.generic.validator';
+import { Usuario } from 'app/pages/usuario/models/usuario';
+import { UsuarioService } from 'app/services/usuario.service';
 
 @Component({
   selector: 'login',
   templateUrl: './login.html',
-  styleUrls: ['./login.scss']
+  styleUrls: ['./login.scss'],
 })
 export class Login implements OnInit, AfterViewInit {
   @ViewChildren(FormControlName, { read: ElementRef }) formInputElements: ElementRef[];
 
-  public errors: any[] = [];
+  errors: any[] = [];
   loginForm: FormGroup;
   usuario: Usuario;
   displayMessage: { [key: string]: string } = {};
   validationMessages: { [key: string]: { [key: string]: string } };
   private genericValidator: GenericValidator;
-
 
 
   constructor(private fb: FormBuilder,
@@ -40,12 +39,12 @@ export class Login implements OnInit, AfterViewInit {
     this.validationMessages = {
       email: {
         required: 'Informe o e-mail',
-        email: 'Email invalido'
+        email: 'Email invalido',
       },
       password: {
         required: 'Informe a senha  ',
-        minlength: 'A senha deve possuir no mínimo 6 caracteres'
-      }
+        minlength: 'A senha deve possuir no mínimo 6 caracteres',
+      },
     };
 
     this.genericValidator = new GenericValidator(this.validationMessages);
@@ -78,7 +77,7 @@ export class Login implements OnInit, AfterViewInit {
       this.usuarioService.login(p)
         .subscribe(
         result => { this.onLoginComplete(result); },
-        error => { this.onLoginError(error); }
+        error => { this.onLoginError(error); },
         );
     }
   }

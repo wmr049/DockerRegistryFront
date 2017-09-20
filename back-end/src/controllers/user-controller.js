@@ -23,6 +23,7 @@ exports.post = async(req, res, next) => {
         await repository.create({
             name: req.body.name,
             email: req.body.email,
+            cpf: req.body.cpf,
             password: md5(req.body.password + global.SALT_KEY),
             roles: ["user"]
         });
@@ -33,7 +34,16 @@ exports.post = async(req, res, next) => {
             global.EMAIL_TMPL.replace('{0}', req.body.name));
 
         res.status(201).send({
-            message: 'Usuario cadastrado com sucesso!'
+            data: {
+                user:{
+                    email: user.email,
+                    name: user.name,
+                    cpf: cpf,
+                    roles: roles
+                },                
+                token: token,
+                message: 'Usuario cadastrado com sucesso!'
+            }            
         });
     } catch (e) {
         res.status(500).send({

@@ -11,20 +11,20 @@ import { Usuario } from '../pages/usuario/models/usuario';
 
 export abstract class ServiceBase {
 
-  public Token: string = '';
+  token: string = '';
 
   protected UrlServiceV1: string = 'http://localhost:3000/';
 
-  public obterUsuario() {
+  obterUsuario() {
     return JSON.parse(localStorage.getItem('eio.user'));
   }
 
   protected obterAuthHeader(): RequestOptions {
-    this.Token = localStorage.getItem('eio.token');
+    this.token = localStorage.getItem('eio.token');
 
-    let headers = new Headers({ 'Content-Type': 'application/json' });
-    headers.append('Authorization', `Bearer ${this.Token}`);
-    let options = new RequestOptions({ headers: headers });
+    const headers = new Headers({ 'Content-Type': 'application/json' });
+    headers.append('Authorization', `Bearer ${this.token}`);
+    const options = new RequestOptions({ headers });
     return options;
   }
 
@@ -42,7 +42,7 @@ export abstract class ServiceBase {
   }
 
   protected extractData(response: Response) {
-    let body = response.json();
+    const body = response.json();
     return body.data || {};
   }
 }

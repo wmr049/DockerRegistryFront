@@ -1,4 +1,17 @@
 {
+  "register": {
+    "title": "Register in the Docker Manager",
+    "name": "Name",
+    "email": "Email",
+    "password": "Password",
+    "repeat": "Repeat",
+    "sign_up": "Sign up",
+    "sign_up_from_app_text": "or sign up with a Click",
+    "share_on_facebook": "Share on Facebook",
+    "share_on_twitter": "Share on Twitter",
+    "share_on_google_plus": "Share on Google Plus",
+    "sign_in_link": "Do you already have a Docker Manager account?"
+  },
   "login": {
     "title": "Sign in to ng2-admin",
     "signup_link": "New to ng2-admin? Sign up!",
