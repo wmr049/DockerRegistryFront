@@ -9,6 +9,7 @@ import { Usuario } from 'app/pages/usuario/models/usuario';
 @Injectable()
 export class UsuarioService extends ServiceBase {
 
+  
   constructor(private http: Http) { super(); }
 
   registrarUsuario(usuario: Usuario): Observable<Usuario> {

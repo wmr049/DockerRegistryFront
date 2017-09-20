@@ -6,3 +6,4 @@ export class Usuario {
   password: string;
   confirmPassword: string;
 }
+ 
