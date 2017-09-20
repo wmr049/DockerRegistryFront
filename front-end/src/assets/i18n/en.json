@@ -32,6 +32,9 @@
     },
     "menu": {
       "dashboard": "Dashboard",
+      "main": "Main",
+      "repositories": "Repositories",
+      "images": "Images",
       "editors": "Editors",
       "ck_editor": "CKEditor",
       "components": "Components",
